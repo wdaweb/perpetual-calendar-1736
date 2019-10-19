@@ -211,11 +211,11 @@ if(($month+1)<=12){
 }
 ?>
 <div class="allbg">
-<?echo "<div class='a1'>".date("Y-F",strtotime($start))."</div>";?>
+<?php echo "<div class='a1'>".date("Y-F",strtotime($start))."</div>";?>
 <div class="square">
 <div class="b1">
-<a href="date.php?month=<?=($premonth)?>&year=<?=($preyear)?>"style="text-decoration:none;">Last month</a>&nbsp;&nbsp;
-<a href="date.php?month=<?=($nextmonth)?>&year=<?=($nextyear)?>"style="text-decoration:none;">Next month</a>
+<a href="?month=<?=($premonth)?>&year=<?=($preyear)?>"style="text-decoration:none;">Last month</a>&nbsp;&nbsp;
+<a href="?month=<?=($nextmonth)?>&year=<?=($nextyear)?>"style="text-decoration:none;">Next month</a>
 </div>
 <div>
 <table>
